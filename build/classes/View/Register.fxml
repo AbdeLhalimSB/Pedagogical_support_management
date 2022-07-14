@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.RegisterForm_CL">
+   <children>
+      <Pane prefHeight="601.0" prefWidth="476.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="370.0" fitWidth="172.0" layoutX="152.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="Name_tx" layoutX="494.0" layoutY="175.0" prefHeight="36.0" prefWidth="229.0" promptText="Nome" styleClass="login_txb" stylesheets="@Style.css" />
+      <Button fx:id="Singup" layoutX="659.0" layoutY="362.0" mnemonicParsing="false" onAction="#register" prefHeight="44.0" prefWidth="172.0" styleClass="bt_log" stylesheets="@Style.css" text="Inscription">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="652.0" layoutY="38.0" text="Inscrire" textFill="#003087">
+         <font>
+            <Font name="Impact" size="63.0" />
+         </font></Label>
+      <Label fx:id="goto_log" layoutX="716.0" layoutY="436.0" onMouseClicked="#Goto_Log" text="Connexion" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="CIN_tx" layoutX="494.0" layoutY="234.0" prefHeight="36.0" prefWidth="229.0" promptText="CIN" styleClass="login_txb" stylesheets="@Style.css" />
+      <TextField fx:id="Email_tx" layoutX="757.0" layoutY="234.0" prefHeight="36.0" prefWidth="229.0" promptText="Email" styleClass="login_txb" stylesheets="@Style.css" />
+      <PasswordField fx:id="Password_tx" layoutX="630.0" layoutY="291.0" prefHeight="36.0" prefWidth="229.0" promptText="Le Mote de Pass" styleClass="login_txb" stylesheets="@Style.css" />
+      <TextField fx:id="LName_tx" layoutX="757.0" layoutY="175.0" prefHeight="36.0" prefWidth="229.0" promptText="Prénom" styleClass="login_txb" stylesheets="@Style.css" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
