@@ -37,6 +37,8 @@ public class LoginForm_CL {
     Statement st;
     
     public void isSign(Event e) throws SQLException, IOException{
+        email_tx.setText("yousra@gmail.com");
+        pass_tx.setText("admin");
         ad.setEmail(email_tx.getText());
         ad.setMdp(pass_tx.getText());
         if(lg.checker(ad)){

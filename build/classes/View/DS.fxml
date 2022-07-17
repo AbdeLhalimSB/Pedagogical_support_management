@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="776.0" prefWidth="1105.0" style="-fx-background-color: #FCF6F5FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.DS_CL">
+   <children>
+      <Pane fx:id="main" layoutX="3.0" layoutY="147.0" prefHeight="535.0" prefWidth="1105.0" style="-fx-background-color: #FCF6F5FF;">
+         <children>
+            <Label layoutX="47.0" layoutY="29.0" text="1.Objectif pédagogique de la séance:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="objective_txa" editable="false" layoutX="47.0" layoutY="54.0" prefHeight="99.0" prefWidth="488.0" styleClass="booordertx" stylesheets="@Style.css" />
+            <Label layoutX="594.0" layoutY="25.0" text="4. Observations:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="observations_txa" editable="false" layoutX="48.0" layoutY="190.0" prefHeight="207.0" prefWidth="488.0" styleClass="booordertx" stylesheets="@Style.css" />
+            <Label layoutX="50.0" layoutY="165.0" text="2. Déroulement de la séance:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="411.0" text="3. Référence supports pédagogiques utilisés:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="outils_txa" editable="false" layoutX="48.0" layoutY="436.0" prefHeight="83.0" prefWidth="488.0" styleClass="booordertx" stylesheets="@Style.css" />
+            <Label layoutX="594.0" layoutY="277.0" text="5. Disposition pour la prochaine séancevations:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="disposiition_txa" editable="false" layoutX="594.0" layoutY="49.0" prefHeight="218.0" prefWidth="480.0" styleClass="booordertx" stylesheets="@Style.css" />
+            <TextArea fx:id="derouletment_txa" editable="false" layoutX="593.0" layoutY="304.0" prefHeight="207.0" prefWidth="488.0" styleClass="booordertx" stylesheets="@Style.css" />
+         </children></Pane>
+      <Line endX="1004.0" layoutX="101.0" layoutY="146.0" startX="-100.0" stroke="#f95700" strokeWidth="2.0" />
+      <Line endX="1004.0" layoutX="100.0" layoutY="684.0" startX="-100.0" stroke="#f95700" strokeWidth="2.0" />
+      <Label layoutX="25.0" layoutY="28.0" text="La date de séance : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <DatePicker fx:id="date_tx" layoutX="181.0" layoutY="29.0" onAction="#getSeances" styleClass="comboboxes" stylesheets="@Style.css" />
+      <Label layoutX="25.0" layoutY="95.0" text="Durée : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="791.0" layoutY="28.0" text="Séance type : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="410.0" layoutY="28.0" text="Le Matiére : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="410.0" layoutY="95.0" text="Le Groupe :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="791.0" layoutY="95.0" text="Le professeur :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="Back" layoutX="927.0" layoutY="703.0" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="153.0" styleClass="all_btns" stylesheets="@Style.css" text="Back" textFill="#fcf6f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btn_delete" layoutX="25.0" layoutY="703.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="153.0" styleClass="all_btns" stylesheets="@Style.css" text="Delete" textFill="#fcf6f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label fx:id="dure_tx" layoutX="137.0" layoutY="95.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="matiers" layoutX="522.0" layoutY="28.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="groupes" layoutX="520.0" layoutY="95.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="seances" layoutX="903.0" layoutY="28.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="profs" layoutX="911.0" layoutY="95.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="error" layoutX="327.0" layoutY="360.0" text="Aucun résultat en cet date" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

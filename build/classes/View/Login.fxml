@@ -5,41 +5,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.LoginForm_CL">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="555.0" style="-fx-background-color: #FCF6F5FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.LoginForm_CL">
    <children>
-      <Pane prefHeight="601.0" prefWidth="476.0" style="-fx-background-color: #36393F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ImageView fitHeight="370.0" fitWidth="172.0" layoutX="141.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../image/logo.png" />
-               </image></ImageView>
-         </children>
-      </Pane>
-      <TextField fx:id="email_tx" layoutX="607.0" layoutY="155.0" prefHeight="36.0" prefWidth="226.0" promptText="Email" styleClass="login_txb" stylesheets="@Style.css" AnchorPane.leftAnchor="607.0" AnchorPane.rightAnchor="110.0" />
-      <PasswordField fx:id="pass_tx" layoutX="607.0" layoutY="207.0" prefHeight="36.0" prefWidth="226.0" promptText="Password" styleClass="login_txb" stylesheets="@Style.css" AnchorPane.leftAnchor="607.0" AnchorPane.rightAnchor="110.0" />
-      <Button fx:id="btnlogin" layoutX="669.0" layoutY="270.0" mnemonicParsing="false" onAction="#isSign" prefHeight="44.0" prefWidth="172.0" styleClass="bt_log" stylesheets="@Style.css" text="Sing in" AnchorPane.leftAnchor="669.0" AnchorPane.rightAnchor="168.0">
+      <TextField fx:id="email_tx" layoutX="129.0" layoutY="162.0" prefHeight="36.0" prefWidth="297.0" promptText="Email" styleClass="login_txb" stylesheets="@Style.css" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="129.0" />
+      <PasswordField fx:id="pass_tx" layoutX="129.0" layoutY="216.0" prefHeight="36.0" prefWidth="297.0" promptText="Password" styleClass="login_txb" stylesheets="@Style.css" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="129.0" />
+      <Button fx:id="btnlogin" layoutX="199.0" layoutY="296.0" mnemonicParsing="false" onAction="#isSign" prefHeight="44.0" prefWidth="166.0" styleClass="bt_log" stylesheets="@Style.css" text="Se connecter" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="190.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Label layoutX="640.0" layoutY="43.0" prefHeight="78.0" prefWidth="163.0" text="Login" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="140.0">
+      <Label layoutX="139.0" layoutY="46.0" prefHeight="78.0" prefWidth="285.0" text="Connexion" textFill="#f95700" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="131.0">
          <font>
             <Font name="Impact" size="63.0" />
          </font></Label>
-      <Label fx:id="goto_reg" layoutX="647.0" layoutY="347.0" onMouseClicked="#Goto_Reg" prefHeight="17.0" prefWidth="146.0" text="Don't have account yet ?" underline="true" AnchorPane.leftAnchor="647.0" AnchorPane.rightAnchor="150.0">
+      <Label fx:id="goto_reg" layoutX="214.0" layoutY="372.0" onMouseClicked="#Goto_Reg" prefHeight="17.0" prefWidth="135.0" text="Don't have account yet ?" underline="true" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="206.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="lbmsg" layoutX="507.0" layoutY="455.0" textFill="RED">
+      <Label fx:id="lbmsg" layoutX="14.0" layoutY="455.0" textFill="RED">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

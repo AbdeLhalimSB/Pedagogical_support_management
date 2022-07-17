@@ -1,15 +1,15 @@
 .exit_btn{
     -fx-background-radius: 10px 10px 10px 10px;
-    -fx-background-color: red;
+    -fx-background-color:  #FCF6F5FF;
 }
 
 .all_btns{
-    -fx-background-color: #1F2121;
+    -fx-background-color: #F95700FF;
 }
 
 .all_btns:hover{
-    -fx-background-radius: 50px 10px 10px 50px;
-    -fx-background-color: red;
+    -fx-background-radius: 10px 50px 10px 50px;
+    -fx-background-color:  #B94300;
     -fx-width: 50%;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .bt_log{
-    -fx-background-color: #1F2121;
+    -fx-background-color: #F95700FF;
     -fx-color: red;
     -fx-background-radius: 50px 50px 50px 50px;
 }
 
 .bt_log:hover{
-    -fx-background-color: red;
+    -fx-background-color: black;
 }
 
 .login_txb{
@@ -39,4 +39,12 @@
 
 .dowara{
     -fx-background-radius: 1000px;
+}
+
+.comboboxes{
+    -fx-border-color: #F95700FF;
+}
+
+.booordertx{
+    -fx-border-color: black;
 }
